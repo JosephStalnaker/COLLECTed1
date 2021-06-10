@@ -2,20 +2,66 @@ body {
   font-family: sans-serif;
 }
 
-a {
-  text-decoration: none;
+header {
+  height: 75px;
+  padding: 10px;
+  background-color: red;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
-label {
-  display: block;
+
+#nav-container {
+  display: flex;
+  flex-direction: row;
+  background-color: royalblue;
+  justify-content: space-between;
+  align-items: center;
+  width: 200px;
 }
 
-nav a {
-  display: inline-block;
-  margin: 1em;
+/* form div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: chartreuse;
+  height: 50px;
+} */
+
+footer {
+  height: 50px;
+  padding: 10px;
+  background-color: blue;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
-form div {
-  margin: 1em;
-  display: inline-block;
+#auth-form {
+  display: flex;
+  justify-content: flex-end;
+  background-color: blueviolet;
+  padding: 5px;
+}
+
+#username-form {
+  display: flex;
+  justify-content: flex-end;
+  background-color:green;
+  padding: 5px;
+}
+#password-form {
+  display: flex;
+  justify-content: flex-end;
+  background-color:green;
+  padding: 5px;
+}
+#button-form {
+  display: flex;
+  justify-content: flex-end;
+  background-color:green;
+  padding: 5px;
 }
