@@ -5,6 +5,7 @@ import { Login, Signup } from './components/AuthForm';
 import Home from './components/Home.js';
 import { me } from './store';
 import AllBooks from './components/AllBooks.js';
+import Navbar from './components/Navbar';
 
 /**
  * COMPONENT
@@ -19,19 +20,25 @@ class Routes extends Component {
 
     return (
       <div>
-        {isLoggedIn ? (
-          <Switch>
-            <Route path="/home" component={Home} />
-            <Route path="/books" component={AllBooks} />
-            <Redirect to="/home" />
-          </Switch>
-        ) : (
-          <Switch>
-            <Route path="/" exact component={Login} />
-            <Route path="/login" component={Login} />
-            <Route path="/signup" component={Signup} />
-          </Switch>
-        )}
+        <header>
+          <Navbar />
+        </header>
+        <main>
+          {isLoggedIn ? (
+            <Switch>
+              <Route path="/home" component={Home} />
+              <Route path="/books" component={AllBooks} />
+              <Redirect to="/home" />
+            </Switch>
+          ) : (
+            <Switch>
+              <Route path="/" exact component={Login} />
+              <Route path="/login" component={Login} />
+              <Route path="/signup" component={Signup} />
+            </Switch>
+          )}
+        </main>
+        <footer>Here are footer contents</footer>
       </div>
     );
   }

@@ -17,20 +17,18 @@ class AllBooks extends React.Component {
     console.log('here are books', books);
     return (
       <div>
-        <main>
-          <div id="all-books-container">
-            {books.map((book) => (
-              <div id="all-books-book-container" key={book.id}>
-                <img src={book.imageUrl} width="100" height="75" />
-                <div id="all-books-details">
-                  <Link to={`/books/${book.id}`}>
-                    <h3>{book.title}</h3>
-                  </Link>
-                </div>
+        <div id="all-books-container">
+          {books.map((book) => (
+            <div id="all-books-book-container" key={book.id}>
+              <img src={book.imageUrl} width="100" height="75" />
+              <div id="all-books-details">
+                <Link to={`/books/${book.id}`}>
+                  <h3>{book.title}</h3>
+                </Link>
               </div>
-            ))}
-          </div>
-        </main>
+            </div>
+          ))}
+        </div>
       </div>
     );
   }

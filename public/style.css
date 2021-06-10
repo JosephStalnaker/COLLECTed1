@@ -2,7 +2,7 @@ body {
   font-family: sans-serif;
 }
 
-header {
+#navbar {
   height: 75px;
   padding: 10px;
   background-color: red;
@@ -64,4 +64,26 @@ footer {
   justify-content: flex-end;
   background-color:green;
   padding: 5px;
+}
+main {
+  background-color: hotpink;
+  height: 600px;
+}
+
+#all-books-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: indigo;
+}
+
+#all-books-book-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: orange;
+  padding: 5px;
+  margin: 10px;
+  
 }

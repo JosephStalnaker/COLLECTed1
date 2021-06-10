@@ -21,7 +21,7 @@ export const fetchBooks = () => async (dispatch) => {
 };
 
 //reducer
-export default function (state = [], action) {
+export default function booksReducer(state = [], action) {
   switch (action.type) {
     case SET_BOOKS:
       return action.books;

@@ -7,7 +7,7 @@ import booksReducer from './books';
 
 const reducer = combineReducers({
   auth,
-  booksReducer,
+  books: booksReducer,
 });
 
 const middleware = composeWithDevTools(
@@ -17,4 +17,3 @@ const store = createStore(reducer, middleware);
 
 export default store;
 export * from './auth';
-export * from './books';
